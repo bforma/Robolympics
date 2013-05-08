@@ -3,13 +3,35 @@
   <head>
     <title>Robolympics</title>
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="all" charset="utf-8">
 
+    <!-- Libraries -->
     <script src="/javascripts/lib/sockjs-0.3.1.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/lib/underscore.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/lib/ICanHaz.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Application -->
+    <script src="/javascripts/app/Server.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/app/Robolympics.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/app/Game.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- View templates -->
+    <script id="index" type="text/html" charset="utf-8">
+      <h1>Welcome to Robolympics!</h1>
+    </script>
+
+    <script id="createGame" type="text/html" charset="utf-8">
+      <button>Create new game</button>
+    </script>
+
+    <script id="game" type="text/html" charset="utf-8">
+      <li>
+        {{aggregateId}}
+      </li>
+    </script>
   </head>
   <body>
     <%- body %>

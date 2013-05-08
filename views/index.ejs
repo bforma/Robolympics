@@ -1,1 +1,8 @@
-<h1>Welcome to Robolympics!</h1>
+<script type="text/javascript" charset="utf-8">
+  $(function () {
+    var robolymipcs = new Robolympics();
+    var robolymipcsView = new RobolympicsView({model: robolymipcs});
+    $("body").html(robolymipcsView.render().el);
+    robolymipcs.start();
+  });
+</script>
